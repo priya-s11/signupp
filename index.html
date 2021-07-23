@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function results(){
+            var name = document.getElementById('name').value;
+            var about = document.getElementById('about').value;
+            var address = document.getElementById('address').value;
+            var phoneno = document.getElementById('phoneno').value;
+            var college = document.getElementById("college").value;
+            var finals = "Name:  " + name+ " "  +"About:  " + about+ " " + "Address:  " + address+ " " + "Phone no:  " + phoneno+" " +"College: "+college+" ";
+            document.getElementById('demos').textContent = finals;
+        }
+    </script>
+</head>
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+         
+            <h2>SIGN UP FORM</h2>
+            
+                   <input type="text" id="name" name="name" placeholder="Name"/><br>
+                    <input type="text" id="about" name="about" placeholder="About"/><br> 
+                    <input type="text" id="address" name="address" placeholder="Address"/><br> 
+                    <input type="text" id="phoneno" name="phone no" placeholder="Phone No"/><br>
+                    <input type="text" id="college" name="college" placeholder="College"/><br><br>
+                    <button  onclick="results()">Submit</button> <br>
+    
+         <span id="demos"></span>
+
+        </form>
+        </div>
+    </div>
+</body>
+</html>
